@@ -1,34 +1,35 @@
-# Kopi Sela — Coffee Shop Demo
+# Rasa Rumah — Demo Website Restoran
 
-Website demo coffee shop modern untuk portofolio NEX Project.
+Website demo responsif untuk portofolio NEX Project. Nama, menu, harga, lokasi, jam operasional, dan seluruh detail bisnis pada website ini adalah contoh.
 
-## Fitur
-- Responsive landing page
-- Menu coffee, non-coffee, pastry & bites
-- Pencarian dan filter kategori
-- Keranjang pesanan dengan penyimpanan `localStorage`
-- Tombol pesanan WhatsApp dengan ringkasan otomatis
-- Form email demo
-- Navigasi mobile
+## Cara menjalankan secara lokal
 
-## Menjalankan di komputer
-Buka `index.html` di browser. Lebih disarankan menggunakan server lokal:
+Buka `index.html` langsung di browser, atau jalankan server lokal dari folder ini:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Kemudian buka `http://localhost:8000`.
+Lalu buka `http://localhost:8000`.
+
+## Fitur
+
+- Halaman restoran modern dan responsif
+- Menu dari data JavaScript dengan filter kategori dan pencarian
+- Keranjang pesanan dengan jumlah dan subtotal
+- Penyimpanan keranjang melalui `localStorage`
+- Pesanan melalui WhatsApp dengan ringkasan yang disiapkan otomatis
+- Formulir permintaan reservasi melalui WhatsApp
+- Navigasi mobile
 
 ## Catatan demo
-- Kopi Sela adalah nama kedai fiktif.
-- Harga, alamat, dan jam operasional adalah data contoh.
-- Tombol WhatsApp membuka WhatsApp dengan pesan siap isi, lalu pengguna memilih kontak sendiri.
-- Form email tidak mengirim atau menyimpan data.
-- Foto menggunakan URL Unsplash dan perlu koneksi internet.
-- Website ini belum terhubung ke sistem POS, stok, pembayaran, reservasi, atau pemesanan backend sungguhan.
 
-## Kustomisasi
-- Edit menu dan harga di `js/app.js` pada array `products`.
-- Edit tampilan di `css/style.css`.
-- Edit konten dan section di `index.html`.
+- Nama restoran, menu, harga, alamat, dan jam operasional adalah data fiktif.
+- Tombol WhatsApp membuka WhatsApp tanpa menentukan nomor tujuan; pengguna memilih kontak sendiri.
+- Form reservasi hanya menyiapkan pesan. Tidak ada sistem reservasi atau konfirmasi otomatis.
+- Gambar memakai URL Unsplash dan membutuhkan koneksi internet.
+- Ini adalah demo front-end; belum terhubung ke backend, sistem POS, inventori, pembayaran, atau pengiriman nyata.
+
+## Mengubah data menu
+
+Edit array `menuItems` di `js/app.js`. Gambar, nama menu, deskripsi, kategori, dan harga disimpan bersama dalam setiap item.
