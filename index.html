@@ -1,15 +1,68 @@
 <!doctype html>
-<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f4f0e8"><title>NEX SHOP — Fashion for Everyday</title><link rel="stylesheet" href="assets/css/style.css"></head>
-<body class="login-page">
-<main class="login-shell">
-  <section class="login-copy"><a class="brand brand-large" href="index.html"><span class="brand-mark">N</span><span>NEX<span class="brand-light">SHOP</span></span></a>
-    <p class="eyebrow">MINIMALIST FASHION · DEMO STORE</p><h1>Gaya simpel,<br><em>setiap hari.</em></h1>
-    <p class="lead">Temukan pilihan fashion untuk melengkapi gaya sehari-hari.</p>
-    <div class="login-actions"><button class="btn btn-dark btn-wide" id="google-login" type="button"><span class="google-mark">G</span> Continue with Google</button><button class="btn btn-outline btn-wide" id="guest-login" type="button">Masuk sebagai Tamu <span aria-hidden="true">→</span></button></div>
-    <p class="small muted">Demo toko online. Login, pembayaran, stok, dan pengiriman di sini bersifat simulasi.</p>
-    <a class="text-link" href="shop.html">Jelajahi toko tanpa masuk →</a>
-  </section>
-  <section class="login-visual" aria-label="Koleksi fashion NEX SHOP"><div class="visual-image"></div><div class="visual-caption"><span>NEW SEASON</span><strong>Everyday essentials.</strong><span class="pill">DEMO COLLECTION</span></div><div class="visual-index">01 <span>/</span> 04</div></section>
-</main>
-<div class="modal-backdrop hidden" id="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title"><div class="modal-card modal-small"><button class="icon-btn modal-close" id="close-login-modal" aria-label="Tutup">×</button><p class="eyebrow">MODE DEMO</p><h2 id="login-modal-title">Login Google belum terhubung</h2><p class="muted">Ini hanya simulasi untuk portofolio. Jangan masukkan email atau kata sandi Google. Lanjutkan dengan profil demo atau masuk sebagai tamu.</p><button class="btn btn-dark btn-wide" id="demo-profile" type="button">Lanjut sebagai NEX Shopper</button><button class="btn btn-outline btn-wide" id="modal-guest" type="button">Masuk sebagai Tamu</button></div></div>
-<script src="assets/js/data.js"></script><script src="assets/js/common.js"></script><script src="assets/js/login.js"></script></body></html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f1e9">
+  <meta name="description" content="Demo website coffee shop modern Kopi Sela — menu, cerita kedai, dan pemesanan online.">
+  <title>Kopi Sela — Ruang untuk Menikmati</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <div class="demo-notice"><span class="demo-dot"></span> WEBSITE DEMO · INFORMASI TOKO DAN HARGA BERSIFAT CONTOH</div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Kopi Sela beranda"><span class="brand-mark">ks.</span><span class="brand-text">kopi sela<small>COFFEE & SLOW BAR</small></span></a>
+    <button class="icon-button menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#menu">Menu</a><a href="#story">Cerita Kami</a><a href="#visit">Kunjungi Kami</a>
+    </nav>
+    <button class="cart-trigger" id="openCart" aria-label="Buka keranjang"><span class="cart-icon">bag</span><span class="cart-label">Pesanan</span><span class="cart-count" id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span KOPI YANG BAIK, WAKTU YANG LEBIH BAIK</p>
+        <h1>Ambil jeda.<br><em>Nikmati harimu.</em></h1>
+        <p class="hero-description">Secangkir kopi, sesuatu yang manis, dan ruang kecil untuk bernapas di tengah hari yang sibuk.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#menu">Lihat Menu <span aria-hidden="true">↗</span></a><a class="text-link" href="#story">Kenali Kopi Sela <span>↓</span></a></div>
+        <div class="hero-meta"><div class="meta-item"><span class="meta-number">01</span><span>Freshly brewed</span></div><div class="meta-divider"></div><div class="meta-item"><span class="meta-number">02</span><span>Made with care</span></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrap"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=85" alt="Secangkir kopi di meja kedai" class="hero-image"><div class="image-badge"><span class="badge-star">✳</span><span>YOUR EVERYDAY<br>COFFEE SPOT</span></div></div>
+        <div class="hero-caption"><span>GOOD COFFEE, NO RUSH.</span><span>EST. FOR THE MOMENT</span></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Nilai Kopi Sela"><div class="ticker-track"><span>BREWED WITH CARE</span><b>✳</b><span>TAKE IT SLOW</span><b>✳</b><span>GOOD DAYS START HERE</span><b>✳</b><span>BREWED WITH CARE</span><b>✳</b><span>TAKE IT SLOW</span><b>✳</b></div></section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-heading"><div><p class="eyebrow">SEDIAAN HARI INI</p><h2>Temukan <em>favoritmu.</em></h2></div><p class="section-intro">Dari kopi harian sampai teman ngobrol sore. Pilih yang paling pas untuk menemani harimu.</p></div>
+      <div class="menu-toolbar"><div class="category-tabs" id="categoryTabs" role="group" aria-label="Filter kategori"><button class="category-tab active" data-category="all">Semua menu</button><button class="category-tab" data-category="coffee">Coffee</button><button class="category-tab" data-category="noncoffee">Non-coffee</button><button class="category-tab" data-category="food">Pastry & bites</button></div><label class="search-box"><span aria-hidden="true">⌕</span><input id="menuSearch" type="search" placeholder="Cari menu..." aria-label="Cari menu"></label></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="menu-bottom"><p>Semua harga yang tampil adalah contoh untuk demonstrasi website.</p><button class="button button-outline" id="viewAllMenu">Lihat semua menu <span>↗</span></button></div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-image"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=85" alt="Suasana interior coffee shop yang hangat" loading="lazy"><span class="vertical-label">A PLACE TO PAUSE</span></div>
+      <div class="story-copy"><p class="eyebrow">SEDIKIT CERITA DARI KAMI</p><h2>Bukan cuma soal kopi. <em>Soal jeda.</em></h2><p>Kopi Sela dibayangkan sebagai tempat sederhana untuk menikmati hal-hal kecil: kopi yang dibuat dengan teliti, obrolan yang mengalir, atau waktu tenang untuk diri sendiri.</p><p>Datang untuk kopinya. Tinggal sedikit lebih lama karena suasananya.</p><a class="text-link dark-link" href="#visit">Temukan ruang kami <span>↗</span></a><div class="story-stamp">SLOW<br>DOWN<span>✳</span></div></div>
+    </section>
+
+    <section class="values-section section-pad"><div class="section-heading values-heading"><div><p class="eyebrow">YANG KAMI JAGA</p><h2>Sederhana, <em>dengan perhatian.</em></h2></div></div><div class="values-grid"><article class="value-card"><span class="value-num">01 / 03</span><div class="value-icon">✳</div><h3>Dibuat saat dipesan</h3><p>Setiap minuman disiapkan sesuai pesanan agar kamu menikmatinya dalam kondisi terbaik.</p></article><article class="value-card"><span class="value-num">02 / 03</span><div class="value-icon">◌</div><h3>Rasa yang seimbang</h3><p>Menu dirancang agar mudah dinikmati, dari pecinta kopi sampai yang memilih non-coffee.</p></article><article class="value-card"><span class="value-num">03 / 03</span><div class="value-icon">⌂</div><h3>Ruang untuk semua</h3><p>Tempat untuk bertemu teman, menyelesaikan pekerjaan, atau sekadar mengambil jeda.</p></article></div></section>
+
+    <section class="visit-section" id="visit"><div class="visit-copy"><p class="eyebrow">SINGGAH SEBENTAR</p><h2>Ketemu di <em>Kopi Sela?</em></h2><p>Datang untuk kopi favoritmu atau pesan lebih dulu untuk dibawa pulang.</p><div class="visit-details"><div><span class="detail-label">LOKASI DEMO</span><span>Alamat kedai contoh, Pekanbaru</span></div><div><span class="detail-label">JAM OPERASIONAL DEMO</span><span>Setiap hari · 09.00–22.00 WIB</span></div></div><button class="button button-cream" id="visitWhatsApp">Pesan lewat WhatsApp <span>↗</span></button></div><div class="visit-visual"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85" alt="Meja dan suasana cafe" loading="lazy"><div class="visit-note"><span>TAKE A BREAK</span><span>YOU DESERVE IT.</span></div></div></section>
+
+    <section class="newsletter section-pad"><div><p class="eyebrow">KABAR DARI KAMI</p><h2>Sesuatu yang enak<br><em>layak ditunggu.</em></h2><p>Bagian ini bisa digunakan untuk promo, menu baru, atau kabar kedai.</p></div><form id="newsletterForm" class="newsletter-form"><label for="newsletterEmail">Email kamu</label><div class="newsletter-input"><input id="newsletterEmail" type="email" placeholder="nama@email.com" required><button type="submit" aria-label="Kirim email">↗</button></div><small>Demo saja — email tidak dikirim atau disimpan.</small></form></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark">ks.</span><span class="brand-text">kopi sela<small>COFFEE & SLOW BAR</small></span></a><p>Kopi yang baik. Waktu yang lebih baik.</p><div class="footer-links"><a href="#menu">Menu</a><a href="#story">Cerita</a><a href="#visit">Kontak</a></div><div class="footer-bottom"><span>© <span id="year"></span> Kopi Sela · Website demo oleh NEX Project</span><a href="#top">Kembali ke atas ↑</a></div></footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Keranjang pesanan" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow">PESANANMU</p><h2>Keranjang <em>kopi.</em></h2></div><button class="close-button" id="closeCart" aria-label="Tutup keranjang">×</button></div><div class="drawer-items" id="drawerItems"></div><div class="drawer-empty" id="drawerEmpty"><div class="empty-icon">◌</div><h3>Keranjang masih kosong</h3><p>Temukan minuman atau camilan yang kamu suka.</p><button class="button button-dark" id="shopFromEmpty">Lihat menu</button></div><div class="drawer-footer" id="drawerFooter"><div class="drawer-total"><span>Subtotal</span><strong id="cartSubtotal">Rp0</strong></div><p>Ongkir dan detail pesanan dikonfirmasi lewat WhatsApp.</p><button class="button button-dark button-full" id="orderWhatsApp">Pesan via WhatsApp <span>↗</span></button></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
