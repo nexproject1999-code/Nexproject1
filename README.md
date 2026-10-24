@@ -1,30 +1,34 @@
-# NEX SHOP — Fashion Online Shop Demo
+# Kopi Sela — Coffee Shop Demo
 
-Demo toko fashion minimalis untuk portofolio NEX Project.
+Website demo coffee shop modern untuk portofolio NEX Project.
 
-## Cara menjalankan
-- Buka `index.html` di browser untuk mulai dari halaman login demo.
-- Pilih `Masuk sebagai Tamu` atau gunakan `Continue with Google` untuk membuka dialog simulasi.
-- Kamu juga bisa langsung membuka `shop.html`.
+## Fitur
+- Responsive landing page
+- Menu coffee, non-coffee, pastry & bites
+- Pencarian dan filter kategori
+- Keranjang pesanan dengan penyimpanan `localStorage`
+- Tombol pesanan WhatsApp dengan ringkasan otomatis
+- Form email demo
+- Navigasi mobile
 
-## Struktur
-- `index.html`: login/entry demo
-- `shop.html`: etalase, filter, pencarian, quick view
-- `product.html`: detail produk
-- `cart.html`: keranjang, jumlah, voucher `NEX10`
-- `checkout.html`: alamat, kurir, pembayaran simulasi
-- `confirmation.html`: nomor pesanan demo dan persiapan pesan WhatsApp
-- `assets/css/style.css`: tampilan responsif
-- `assets/js/data.js`: data 12 produk fiktif yang mudah diubah
-- `assets/js/`: logika halaman
+## Menjalankan di komputer
+Buka `index.html` di browser. Lebih disarankan menggunakan server lokal:
 
-## Penting
-- Login Google **tidak** terhubung ke Google OAuth.
-- Transfer bank, QRIS, e-wallet, COD, ongkir, stok, dan kurir hanya simulasi.
-- Tidak ada uang yang diproses dan tidak ada pesanan dikirim.
-- WhatsApp menggunakan `https://wa.me/?text=...` agar pengguna memilih sendiri kontak tujuan. Pesan diberi keterangan DEMO.
-- Foto produk menggunakan URL gambar Unsplash sehingga memerlukan internet. Jika gambar gagal dimuat, ada gambar fallback.
-- Data keranjang dan pesanan disimpan lokal di browser melalui `localStorage`, tidak dikirim ke server.
-- Data produk berada di `assets/js/data.js` agar mudah diedit.
+```bash
+python3 -m http.server 8000
+```
 
-Untuk GitHub Pages, unggah seluruh isi folder ini ke root repository, jangan hanya file HTML.
+Kemudian buka `http://localhost:8000`.
+
+## Catatan demo
+- Kopi Sela adalah nama kedai fiktif.
+- Harga, alamat, dan jam operasional adalah data contoh.
+- Tombol WhatsApp membuka WhatsApp dengan pesan siap isi, lalu pengguna memilih kontak sendiri.
+- Form email tidak mengirim atau menyimpan data.
+- Foto menggunakan URL Unsplash dan perlu koneksi internet.
+- Website ini belum terhubung ke sistem POS, stok, pembayaran, reservasi, atau pemesanan backend sungguhan.
+
+## Kustomisasi
+- Edit menu dan harga di `js/app.js` pada array `products`.
+- Edit tampilan di `css/style.css`.
+- Edit konten dan section di `index.html`.
